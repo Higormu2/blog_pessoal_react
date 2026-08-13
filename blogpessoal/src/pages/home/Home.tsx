@@ -1,5 +1,4 @@
 function Home() {
-
   return (
     <div
       style={{
@@ -8,16 +7,14 @@ function Home() {
         justifyContent: "center"
       }}
     >
- 
       <div
-        style ={{
+        style={{
           display: "grid",
           gridTemplateColumns: "1fr 1fr",
           color: "white",
           maxWidth: "1280px"
         }}
       >
- 
         {/* Conteúdo de texto */}
         <div
           style={{
@@ -30,81 +27,46 @@ function Home() {
             paddingBottom: "1rem"
           }}
         >
-          <h2
-          style={{
-            fontSize: "3rem",
-            fontWeight: "bold"
-          }}
-          >
+          <h2 style={{ fontSize: "3rem", fontWeight: "bold" }}>
             Seja Bem Vindo!
           </h2>
 
-
-          <p
-          style={{
-            fontSize: "1.25rem",
-       }}
-          >
+          <p style={{ fontSize: "1.25rem" }}>
             Expresse aqui seus pensamentos
           </p>
 
+          <button
+            style={{
+              backgroundColor: "#4f46e5",
+              color: "white",
+              border: "none",
+              padding: "0.5rem 1rem",
+              borderRadius: "0.5rem",
+              cursor: "pointer",
+              fontSize: "1rem"
+            }}
+          >
+            Nova Postagem
+          </button>
+        </div>
 
-          <div
+        {/* Imagem da página home */}
+        <div
           style={{
             display: "flex",
-            justifyContent: "space-around",
-            gap: "1rem"
-          }}
-          >
-       <div
-       style={{
-        borderRadius: "0.5rem",
-        border: "2px solid white",
-        padding: "0.5rem 1rem",
-        
-       }}
-       >
-        <button
-          style={{
-            backgroundColor: "#4f46e5",
-            color: "white",
-            border: "none",
-            padding: "0.5rem 1rem",
-            borderRadius: "0.25rem",
-            cursor: "pointer"
+            justifyContent: "center",
+            alignItems: "center"
           }}
         >
-        </button>
-          Nova Postagem
-         </div>
-            
-        
-       </div>
- 
-         {/* Imagem da página home */}
-        <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          
-        }}
-        >
-            <img
-              src="https://i.imgur.com/fyfri1v.png"
-              alt="Imagem da página Home"
-              style={{
-                width: "66%"
-                
-              }}
-            />
+          <img
+            src="https://i.imgur.com/fyfri1v.png"
+            alt="Imagem da página Home"
+            style={{ width: "66%" }}
+          />
         </div>
- 
-        </div>
- 
       </div>
- 
     </div>
   )
 }
- 
+
 export default Home
