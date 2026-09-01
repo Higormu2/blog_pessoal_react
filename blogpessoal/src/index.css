@@ -1,7 +1,2 @@
 @import "tailwindcss";
 
-@layer base {
-  body {
-    margin: 0;
-  }
-}
